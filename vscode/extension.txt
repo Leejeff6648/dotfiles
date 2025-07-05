@@ -1,0 +1,13 @@
+esbenp.prettier-vscode
+dbaeumer.vscode-eslint
+ms-ceintl.vscode-language-pack-zh-hant
+formulahendry.auto-rename-tag
+formulahendry.auto-close-tag
+ritwickdey.LiveServer
+pkief.material-icon-theme
+akamud.vscode-theme-onedark
+msjsdiag.debugger-for-chrome
+streetsidesoftware.code-spell-checker
+matthewferderer.vscode-jest-runner
+naro143.vscode-swiftlint
+vknabel.vscode-swift-development-environment

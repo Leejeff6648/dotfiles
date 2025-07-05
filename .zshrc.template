@@ -1,0 +1,40 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)
+
+source $ZSH/oh-my-zsh.sh
+
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"
+
+# PNPM / YARN (optional)
+export PATH="$HOME/Library/pnpm:$PATH"
+
+# PATH
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+
+# alias 常用設定
+alias gs="git status"
+alias ga="git add ."
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gco="git checkout"
+alias gl="git pull"
+alias gp="git push"
+alias nrd="rm -rf node_modules && npm install"
+alias reload!="source ~/.zshrc"
+
+# 快捷跳轉
+alias dev="cd ~/Developer"
+alias dot="cd ~/dotfiles"

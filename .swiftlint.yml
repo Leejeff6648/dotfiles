@@ -1,0 +1,37 @@
+opt_in_rules:
+  - empty_count
+  - redundant_optional_initialization
+  - force_unwrapping
+  - sorted_first_last
+  - explicit_init
+
+excluded:
+  - Carthage
+  - Pods
+
+line_length:
+  warning: 120
+  error: 150
+  ignores_comments: true
+  ignores_urls: true
+
+force_cast:
+  severity: warning
+
+force_unwrapping:
+  severity: warning
+
+identifier_name:
+  allowed_symbols: ["_"]
+  excluded:
+    - id
+    - URL
+
+trailing_whitespace:
+  severity: warning
+
+todo:
+  severity: warning
+
+mark:
+  severity: warning

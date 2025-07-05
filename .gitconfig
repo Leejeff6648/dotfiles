@@ -1,0 +1,22 @@
+[user]
+	name = jeff.lee
+	email = leejeff6648@hotmail.com
+
+[core]
+  editor = code --wait
+	excludesfile = /Users/k2j/.gitignore_global
+
+[alias]
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+  lg = log --oneline --graph --all
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/k2j/.stCommitMsg
